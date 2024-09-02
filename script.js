@@ -1,0 +1,1 @@
+alert('Eu deixo os cara, você permite?')

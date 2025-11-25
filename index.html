@@ -1,13 +1,236 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PEIXE BOI</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Um Presente pra Ti</title>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  body {
+    font-family: 'Dancing Script', cursive, sans-serif;
+    margin: 0; padding: 0; 
+    background: linear-gradient(135deg, #e0f7fa, #f5f5dc); /* Azul claro para bege areia */
+    color: #333;
+    min-height: 100vh;
+  }
+  header {
+    background: linear-gradient(45deg, #4dd0e1, #81c784); /* Azul turquesa para verde água */
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    position: relative;
+  }
+  header::after {
+    content: "🌊"; /* Ícone de onda para vibe praia */
+    font-size: 1.5em;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  nav {
+    background: rgba(173, 216, 230, 0.8); /* Azul claro suave */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  nav a {
+    color: #2e7d32; /* Verde escuro neutro */
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    margin: 5px;
+  }
+  nav a:hover {
+    background: rgba(255, 255, 255, 0.5);
+    transform: scale(1.05);
+  }
+  main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 10px;
+  }
+  section {
+    background: rgba(255, 255, 255, 0.95); /* Branco off com transparência */
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 20px;
+    min-height: 150px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  section.section-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  iframe {
+    display: block;
+    margin: 15px auto;
+    max-width: 100%;
+    height: 315px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  }
+  .music-desc {
+    font-style: italic;
+    text-align: center;
+    margin-top: 10px;
+    color: #666;
+  }
+  .poem-title {
+    font-size: 1.8em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #4dd0e1; /* Azul turquesa */
+  }
+  .estrofe {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    text-align: center;
+  }
+  .adoro-list {
+    text-align: center;
+    line-height: 1.8;
+  }
+  .adoro-list li {
+    margin-bottom: 10px;
+  }
+  h2 {
+    color: #4dd0e1; /* Azul turquesa */
+    text-align: center;
+  }
+  p {
+    line-height: 1.6;
+  }
+</style>
 </head>
 <body>
-    <button>VOCÊ DEIXA OS CARA?</button>
 
-    <script src="script.js"></script>
+<header>
+  Um Presente pra Ti
+</header>
+
+<nav>
+  <a href="#inicio" onclick="showSection('inicio')">Início</a>
+  <a href="#texto" onclick="showSection('texto')">Texto</a>
+  <a href="#adoro" onclick="showSection('adoro')">Adoro em ti</a>
+  <a href="#poema" onclick="showSection('poema')">Poema</a>
+  <a href="#musica" onclick="showSection('musica')">Música</a>
+</nav>
+
+<main>
+  <section id="inicio" class="section-visible">
+    <h2>Bem-vinda, Amor! 🌴</h2>
+    <p>Este é um presente especial feito com carinho por Mateus.</p>
+  </section>
+
+  <section id="texto" style="display:none;">
+    <h2>Texto Especial</h2>
+    <p>Meu Amor, eu sei que a gente não tá vivendo os nossos dias mais fáceis, e isso pesa. Mas mesmo assim, existe uma coisa que nunca vai mudar, eu continuo aqui te apoiando. Continuo pela gente, pelo que a gente construiu e ainda vai construir.</p>
+    <p>Quero que você lembre, mesmo nos meus dias confusos, do quanto eu tenho orgulho de quem você é, da tua força, leveza, da sua forma tão única de enxergar e lidar com o mundo. Quero te ver crescendo, enfrentando tudo comigo, mesmo quando o dia não for dos melhores, pois afinal vc merece tudo e muito mais.</p>
+    <p>Tu é alguém que eu admiro e amo demais, não só nos momentos perfeitos, mas também nos imperfeitos, nos silenciosos, nos difíceis. Eu te amo por completo, do jeito que você é.</p>
+    <p>Eu continuo aqui, do seu lado sempre e sempre, quero que realize tudo oq merece que sei do potencial que tem, e eu quero sempre estar ao teu lado.</p>
+    <p>E eu espero que, mesmo agora, você consiga sentir isso. Porque o meu amor por você nunca deixou de existir.</p>
+    <p>Desculpe tudo o que está acontecendo, acho que é culpa minha, mas espero que entenda. <strong>EU TE AMOOOOOOOOOOO</strong></p>
+  </section>
+
+  <section id="adoro" style="display:none;">
+    <h2>Adoro em ti</h2>
+    <p>Adoro em ti...</p>
+    <ul class="adoro-list">
+      <li>o jeito que me entende</li>
+      <li>seu sorriso</li>
+      <li>seus olhos</li>
+      <li>seu abraço</li>
+      <li>seu beijo</li>
+      <li>sua maturidade</li>
+      <li>suas pintinhas</li>
+      <li>seu estilo</li>
+      <li>o quanto me deixa feliz</li>
+      <li>o tempo que passamos juntos</li>
+      <li>teu esforço</li>
+      <li>teu cuidado</li>
+    </ul>
+  </section>
+
+  <section id="poema" style="display:none;">
+    <h2>Poema</h2>
+    <div class="poem-title">Assim que Começa</div>
+    <div class="estrofe">
+      Um girassol nasce<br>
+      do sol do teu sorriso,<br>
+      que agora me guia,<br>
+      me mostra o que é preciso.
+    </div>
+    <div class="estrofe">
+      A neblina se esvem,<br>
+      junto às desconfianças<br>
+      que um dia carregávamos,<br>
+      cheias de inseguranças...
+    </div>
+    <div class="estrofe">
+      ...tudo agora muda,<br>
+      meu anseio diário<br>
+      clama só por você,<br>
+      somente você.
+    </div>
+    <div class="estrofe">
+      Quero que no futuro,<br>
+      ao olharmos para trás,<br>
+      vejamos que a verdade<br>
+      foi sempre o que nos traz
+    </div>
+    <div class="estrofe">
+      a certeza mais bonita,<br>
+      sem medo ou comparação,<br>
+      que o que temos é só nosso,<br>
+      vai além da opinião.
+    </div>
+    <div class="estrofe">
+      Não importa a idade,<br>
+      nem tempo ou estação,<br>
+      só peço que cultive esse amor,<br>
+      com honetidade, respeito e a uniao.
+    </div>
+  </section>
+
+  <section id="musica" style="display:none;">
+    <h2>Música para Você</h2>
+    <iframe 
+      src="https://www.youtube.com/embed/ICS6uKC93w0" 
+      title="Os Anjos Cantam - YouTube"
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen></iframe>
+    <p class="music-desc">sei que não é um estilo de música que você goste, mas ela é tãoooo oque penso quando te vejo</p>
+  </section>
+</main>
+
+<script>
+  function showSection(id) {
+    const sections = ['inicio', 'texto', 'adoro', 'poema', 'musica'];
+    sections.forEach(s => {
+      document.getElementById(s).style.display = (s === id) ? 'block' : 'none';
+      if (s === id) {
+        setTimeout(() => {
+          document.getElementById(s).classList.add('section-visible');
+        }, 10);
+      } else {
+        document.getElementById(s).classList.remove('section-visible');
+      }
+    });
+  }
+</script>
+
 </body>
 </html>
